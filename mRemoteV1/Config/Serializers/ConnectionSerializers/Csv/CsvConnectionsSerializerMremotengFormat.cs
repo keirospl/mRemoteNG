@@ -157,6 +157,7 @@ namespace mRemoteNG.Config.Serializers.Csv
                 .Append(FormatForCsv(con.Inheritance.Domain))
                 .Append(FormatForCsv(con.Inheritance.Icon))
                 .Append(FormatForCsv(con.Inheritance.Panel))
+                .Append(FormatForCsv(con.Inheritance.Color))
                 .Append(FormatForCsv(con.Inheritance.Password))
                 .Append(FormatForCsv(con.Inheritance.Port))
                 .Append(FormatForCsv(con.Inheritance.Protocol))

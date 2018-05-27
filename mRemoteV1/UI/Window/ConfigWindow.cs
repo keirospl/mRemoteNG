@@ -1409,6 +1409,8 @@ namespace mRemoteNG.UI.Window
                             strHide.Add("Username");
                         if (conI.Inheritance.Panel)
                             strHide.Add("Panel");
+                        if (conI.Inheritance.Color)
+                            strHide.Add("Color");
                         if (conI.IsContainer)
                             strHide.Add("Hostname");
                         if (conI.Inheritance.PreExtApp)

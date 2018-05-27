@@ -141,7 +141,7 @@ namespace mRemoteNG.Config.Serializers
             connectionInfo.Inheritance.Domain = (bool)dataRow["InheritDomain"];
             connectionInfo.Inheritance.Icon = (bool)dataRow["InheritIcon"];
             connectionInfo.Inheritance.Panel = (bool)dataRow["InheritPanel"];
-            connectionInfo.Inheritance.Panel = (bool)dataRow["InheritColor"];
+            connectionInfo.Inheritance.Color = (bool)dataRow["InheritColor"];
             connectionInfo.Inheritance.Password = (bool)dataRow["InheritPassword"];
             connectionInfo.Inheritance.Port = (bool)dataRow["InheritPort"];
             connectionInfo.Inheritance.Protocol = (bool)dataRow["InheritProtocol"];
