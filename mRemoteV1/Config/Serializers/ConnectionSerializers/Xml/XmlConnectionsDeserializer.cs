@@ -360,6 +360,7 @@ namespace mRemoteNG.Config.Serializers.Xml
                         DisplayWallpaper = bool.Parse(xmlnode.Attributes["InheritDisplayWallpaper"].Value),
                         Icon = bool.Parse(xmlnode.Attributes["InheritIcon"].Value),
                         Panel = bool.Parse(xmlnode.Attributes["InheritPanel"].Value),
+                        Color = bool.Parse(xmlnode.Attributes["InheritColor"].Value),
                         Port = bool.Parse(xmlnode.Attributes["InheritPort"].Value),
                         Protocol = bool.Parse(xmlnode.Attributes["InheritProtocol"].Value),
                         PuttySession = bool.Parse(xmlnode.Attributes["InheritPuttySession"].Value),

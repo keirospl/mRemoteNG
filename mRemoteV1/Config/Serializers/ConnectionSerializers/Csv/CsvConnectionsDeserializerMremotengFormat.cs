@@ -399,6 +399,13 @@ namespace mRemoteNG.Config.Serializers.Csv
                     connectionRecord.Inheritance.Panel = value;
             }
 
+            if (headers.Contains("InheritColor"))
+            {
+                bool value;
+                if (bool.TryParse(connectionCsv[headers.IndexOf("InheritColor")], out value))
+                    connectionRecord.Inheritance.Color = value;
+            }
+
             if (headers.Contains("InheritPassword"))
             {
                 bool value;

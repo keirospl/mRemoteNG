@@ -146,6 +146,7 @@ namespace mRemoteNG.Config.Serializers.Xml
                 element.Add(new XAttribute("InheritDomain", connectionInfo.Inheritance.Domain.ToString().ToLowerInvariant()));
                 element.Add(new XAttribute("InheritIcon", connectionInfo.Inheritance.Icon.ToString().ToLowerInvariant()));
                 element.Add(new XAttribute("InheritPanel", connectionInfo.Inheritance.Panel.ToString().ToLowerInvariant()));
+                element.Add(new XAttribute("InheritColor", connectionInfo.Inheritance.Color.ToString().ToLowerInvariant()));
                 element.Add(new XAttribute("InheritPassword", connectionInfo.Inheritance.Password.ToString().ToLowerInvariant()));
                 element.Add(new XAttribute("InheritPort", connectionInfo.Inheritance.Port.ToString().ToLowerInvariant()));
                 element.Add(new XAttribute("InheritProtocol", connectionInfo.Inheritance.Protocol.ToString().ToLowerInvariant()));
@@ -204,6 +205,7 @@ namespace mRemoteNG.Config.Serializers.Xml
                 element.Add(new XAttribute("InheritDomain", falseString));
                 element.Add(new XAttribute("InheritIcon", falseString));
                 element.Add(new XAttribute("InheritPanel", falseString));
+                element.Add(new XAttribute("InheritColor", falseString));
                 element.Add(new XAttribute("InheritPassword", falseString));
                 element.Add(new XAttribute("InheritPort", falseString));
                 element.Add(new XAttribute("InheritProtocol", falseString));

@@ -76,7 +76,7 @@ namespace mRemoteNG.Config.Serializers
             connectionInfo.Description = (string)dataRow["Description"];
             connectionInfo.Icon = (string)dataRow["Icon"];
             connectionInfo.Panel = (string)dataRow["Panel"];
-            connectionInfo.Color = (Color)dataRow["Color"];
+            connectionInfo.Color = Color.FromArgb(Convert.ToInt32(dataRow["Color"]));
             connectionInfo.Username = (string)dataRow["Username"];
             connectionInfo.Domain = (string)dataRow["DomainName"];
             connectionInfo.Password = (string)dataRow["Password"];
@@ -141,6 +141,7 @@ namespace mRemoteNG.Config.Serializers
             connectionInfo.Inheritance.Domain = (bool)dataRow["InheritDomain"];
             connectionInfo.Inheritance.Icon = (bool)dataRow["InheritIcon"];
             connectionInfo.Inheritance.Panel = (bool)dataRow["InheritPanel"];
+            connectionInfo.Inheritance.Panel = (bool)dataRow["InheritColor"];
             connectionInfo.Inheritance.Password = (bool)dataRow["InheritPassword"];
             connectionInfo.Inheritance.Port = (bool)dataRow["InheritPort"];
             connectionInfo.Inheritance.Protocol = (bool)dataRow["InheritProtocol"];

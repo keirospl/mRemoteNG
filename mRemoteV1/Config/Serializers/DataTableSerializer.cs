@@ -69,6 +69,7 @@ namespace mRemoteNG.Config.Serializers
             dataTable.Columns.Add("Description", typeof(string));
             dataTable.Columns.Add("Icon", typeof(string));
             dataTable.Columns.Add("Panel", typeof(string));
+            dataTable.Columns.Add("Color", typeof(int));
             dataTable.Columns.Add("Username", typeof(string));
             dataTable.Columns.Add("DomainName", typeof(string));
             dataTable.Columns.Add("Password", typeof(string));
@@ -127,6 +128,7 @@ namespace mRemoteNG.Config.Serializers
             dataTable.Columns.Add("InheritDomain", typeof(bool));
             dataTable.Columns.Add("InheritIcon", typeof(bool));
             dataTable.Columns.Add("InheritPanel", typeof(bool));
+            dataTable.Columns.Add("InheritColor", typeof(bool));
             dataTable.Columns.Add("InheritPassword", typeof(bool));
             dataTable.Columns.Add("InheritPort", typeof(bool));
             dataTable.Columns.Add("InheritProtocol", typeof(bool));
@@ -209,7 +211,7 @@ namespace mRemoteNG.Config.Serializers
             dataRow["Description"] = connectionInfo.Description;
             dataRow["Icon"] = connectionInfo.Icon;
             dataRow["Panel"] = connectionInfo.Panel;
-            dataRow["Color"] = connectionInfo.Color;
+            dataRow["Color"] = connectionInfo.Color.ToArgb();
             dataRow["Username"] = _saveFilter.SaveUsername ? connectionInfo.Username : "";
             dataRow["DomainName"] = _saveFilter.SaveDomain ? connectionInfo.Domain : "";
             dataRow["Password"] = _saveFilter.SavePassword ? connectionInfo.Password : "";
@@ -275,6 +277,7 @@ namespace mRemoteNG.Config.Serializers
                 dataRow["InheritDomain"] = connectionInfo.Inheritance.Domain;
                 dataRow["InheritIcon"] = connectionInfo.Inheritance.Icon;
                 dataRow["InheritPanel"] = connectionInfo.Inheritance.Panel;
+                dataRow["InheritColor"] = connectionInfo.Inheritance.Color;
                 dataRow["InheritPassword"] = connectionInfo.Inheritance.Password;
                 dataRow["InheritPort"] = connectionInfo.Inheritance.Port;
                 dataRow["InheritProtocol"] = connectionInfo.Inheritance.Protocol;
@@ -332,6 +335,7 @@ namespace mRemoteNG.Config.Serializers
                 dataRow["InheritDomain"] = false;
                 dataRow["InheritIcon"] = false;
                 dataRow["InheritPanel"] = false;
+                dataRow["InheritColor"] = false;
                 dataRow["InheritPassword"] = false;
                 dataRow["InheritPort"] = false;
                 dataRow["InheritProtocol"] = false;
