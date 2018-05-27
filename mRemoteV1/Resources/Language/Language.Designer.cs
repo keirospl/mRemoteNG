@@ -4480,6 +4480,15 @@ namespace mRemoteNG {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sets the color of tab.
+        /// </summary>
+        internal static string strPropertyDescriptionColor {
+            get {
+                return ResourceManager.GetString("strPropertyDescriptionColor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Select the colour quality to be used..
         /// </summary>
         internal static string strPropertyDescriptionColors {
@@ -4980,6 +4989,15 @@ namespace mRemoteNG {
         internal static string strPropertyNameCacheBitmaps {
             get {
                 return ResourceManager.GetString("strPropertyNameCacheBitmaps", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Color.
+        /// </summary>
+        internal static string strPropertyNameColor {
+            get {
+                return ResourceManager.GetString("strPropertyNameColor", resourceCulture);
             }
         }
         

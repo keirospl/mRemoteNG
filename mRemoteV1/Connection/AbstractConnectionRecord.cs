@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Drawing;
 using mRemoteNG.Connection.Protocol;
 using mRemoteNG.Connection.Protocol.Http;
 using mRemoteNG.Connection.Protocol.ICA;
@@ -19,6 +20,7 @@ namespace mRemoteNG.Connection
         private string _description;
         private string _icon;
         private string _panel;
+        private Color _color;
 
         private string _hostname;
         private string _username = "";
@@ -117,6 +119,15 @@ namespace mRemoteNG.Connection
         {
             get { return GetPropertyValue("Panel", _panel); }
             set { SetField(ref _panel, value, "Panel"); }
+        }
+
+        [LocalizedAttributes.LocalizedCategory("strCategoryDisplay"),
+            LocalizedAttributes.LocalizedDisplayName("strPropertyNameColor"),
+            LocalizedAttributes.LocalizedDescription("strPropertyDescriptionColor")]
+        public virtual Color Color
+        {
+            get { return GetPropertyValue("Color", _color); }
+            set { SetField(ref _color, value, "Color"); }
         }
         #endregion
 

@@ -118,6 +118,7 @@ namespace mRemoteNG.Connection
 
                 connectionInfo.OpenConnections.Add(newProtocol);
                 FrmMain.Default.SelectedConnection = connectionInfo;
+                ((ConnectionWindow)connectionForm).TabController.BackColor = connectionInfo.Color;
             }
             catch (Exception ex)
             {

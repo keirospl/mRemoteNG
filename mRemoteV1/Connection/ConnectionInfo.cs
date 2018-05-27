@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Drawing;
 using System.Linq;
 using System.Reflection;
 using mRemoteNG.App;
@@ -260,6 +261,7 @@ namespace mRemoteNG.Connection
             Description = Settings.Default.ConDefaultDescription;
             Icon = Settings.Default.ConDefaultIcon;
             Panel = Language.strGeneral;
+            Color = SystemColors.Control;
         }
 
         private void SetConnectionDefaults()

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Globalization;
 using System.Security;
 using System.Windows.Forms;
@@ -379,6 +380,7 @@ namespace mRemoteNG.Config.Serializers.Xml
                     }
                     connectionInfo.Icon = xmlnode.Attributes["Icon"].Value;
                     connectionInfo.Panel = xmlnode.Attributes["Panel"].Value;
+                    connectionInfo.Color = Color.FromArgb(Convert.ToInt32(xmlnode.Attributes["Color"].Value));
                 }
                 else
                 {

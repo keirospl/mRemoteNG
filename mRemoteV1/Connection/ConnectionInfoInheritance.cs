@@ -37,6 +37,11 @@ namespace mRemoteNG.Connection
 		LocalizedAttributes.LocalizedDisplayNameInheritAttribute("strPropertyNamePanel"), 
 		LocalizedAttributes.LocalizedDescriptionInheritAttribute("strPropertyDescriptionPanel"), 
 		TypeConverter(typeof(MiscTools.YesNoTypeConverter))]public bool Panel {get; set;}
+
+        [LocalizedAttributes.LocalizedCategory("strCategoryDisplay", 2),
+        LocalizedAttributes.LocalizedDisplayNameInheritAttribute("strPropertyNameColor"),
+        LocalizedAttributes.LocalizedDescriptionInheritAttribute("strPropertyDescriptionColor"),
+        TypeConverter(typeof(MiscTools.YesNoTypeConverter))]public bool Color { get; set; }
         #endregion
         #region Connection
         [LocalizedAttributes.LocalizedCategory("strCategoryConnection", 3),

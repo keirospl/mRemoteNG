@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using mRemoteNG.App;
 using mRemoteNG.Connection;
@@ -75,6 +76,7 @@ namespace mRemoteNG.Config.Serializers
             connectionInfo.Description = (string)dataRow["Description"];
             connectionInfo.Icon = (string)dataRow["Icon"];
             connectionInfo.Panel = (string)dataRow["Panel"];
+            connectionInfo.Color = (Color)dataRow["Color"];
             connectionInfo.Username = (string)dataRow["Username"];
             connectionInfo.Domain = (string)dataRow["DomainName"];
             connectionInfo.Password = (string)dataRow["Password"];

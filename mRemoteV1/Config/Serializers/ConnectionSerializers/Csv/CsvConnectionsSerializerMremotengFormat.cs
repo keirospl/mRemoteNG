@@ -84,6 +84,7 @@ namespace mRemoteNG.Config.Serializers.Csv
                 .Append(FormatForCsv(con.GetTreeNodeType()))
                 .Append(FormatForCsv(con.Description))
                 .Append(FormatForCsv(con.Icon))
+                .Append(con.Color.ToArgb())
                 .Append(FormatForCsv(con.Panel));
 
             if (_saveFilter.SaveUsername)

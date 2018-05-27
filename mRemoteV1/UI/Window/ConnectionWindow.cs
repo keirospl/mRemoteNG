@@ -156,11 +156,16 @@ namespace mRemoteNG.UI.Window
             if (TabController.SelectedTab == null)
             {
 	            FrmMain.Default.SelectedConnection = null;
+                TabController.BackColor = SystemColors.Control;
             }
             else
             {
                 var interfaceControl = TabController.SelectedTab?.Tag as InterfaceControl;
 	            FrmMain.Default.SelectedConnection = interfaceControl?.Info;
+                if (interfaceControl != null)
+                {
+                    TabController.BackColor = interfaceControl.Info.Color;
+                }
             }
         }
         #endregion

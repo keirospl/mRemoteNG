@@ -209,6 +209,7 @@ namespace mRemoteNG.Config.Serializers
             dataRow["Description"] = connectionInfo.Description;
             dataRow["Icon"] = connectionInfo.Icon;
             dataRow["Panel"] = connectionInfo.Panel;
+            dataRow["Color"] = connectionInfo.Color;
             dataRow["Username"] = _saveFilter.SaveUsername ? connectionInfo.Username : "";
             dataRow["DomainName"] = _saveFilter.SaveDomain ? connectionInfo.Domain : "";
             dataRow["Password"] = _saveFilter.SavePassword ? connectionInfo.Password : "";

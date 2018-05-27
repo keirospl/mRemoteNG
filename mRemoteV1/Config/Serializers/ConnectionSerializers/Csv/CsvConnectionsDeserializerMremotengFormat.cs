@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using mRemoteNG.Connection;
 using mRemoteNG.Connection.Protocol;
@@ -90,6 +91,7 @@ namespace mRemoteNG.Config.Serializers.Csv
             connectionRecord.Description = headers.Contains("Description") ? connectionCsv[headers.IndexOf("Description")] : "";
             connectionRecord.Icon = headers.Contains("Icon") ? connectionCsv[headers.IndexOf("Icon")] : "";
             connectionRecord.Panel = headers.Contains("Panel") ? connectionCsv[headers.IndexOf("Panel")] : "";
+            connectionRecord.Color = headers.Contains("Color") ? Color.FromArgb(Convert.ToInt32(connectionCsv[headers.IndexOf("Color")])) : SystemColors.Control;
             connectionRecord.Username = headers.Contains("Username") ? connectionCsv[headers.IndexOf("Username")] : "";
             connectionRecord.Password = headers.Contains("Password") ? connectionCsv[headers.IndexOf("Password")] : "";
             connectionRecord.Domain = headers.Contains("Domain") ? connectionCsv[headers.IndexOf("Domain")] : "";
